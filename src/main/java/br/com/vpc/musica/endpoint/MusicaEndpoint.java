@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.vpc.musica.model.Musica;
-import br.com.vpc.repository.MusicaRepository;
+import br.com.vpc.repository.musica.MusicaRepository;
 
 @RestController
 @RequestMapping("musica")

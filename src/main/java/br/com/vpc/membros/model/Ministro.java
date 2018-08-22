@@ -2,13 +2,11 @@ package br.com.vpc.membros.model;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 import br.com.vpc.instrumentos.model.Instrumento;
-import br.com.vpc.repository.AbstractMinistroEntity;
+import br.com.vpc.repository.membros.AbstractMinistroEntity;
 
 @Entity
 public class Ministro extends AbstractMinistroEntity{
@@ -18,8 +16,7 @@ public class Ministro extends AbstractMinistroEntity{
 	private String funcao;
 
 
-	@OneToMany(cascade=CascadeType.PERSIST)
-	@JoinColumn(name="ministro_id", referencedColumnName="id")
+	@ManyToMany
 	private List<Instrumento> instrumento;
 
 	public Ministro(String nome, String funcao, List<Instrumento> instrumento) {

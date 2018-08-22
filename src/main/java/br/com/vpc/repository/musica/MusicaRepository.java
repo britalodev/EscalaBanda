@@ -1,4 +1,4 @@
-package br.com.vpc.repository;
+package br.com.vpc.repository.musica;
 
 import java.util.List;
 

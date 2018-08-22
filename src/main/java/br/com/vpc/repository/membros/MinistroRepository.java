@@ -1,4 +1,4 @@
-package br.com.vpc.repository;
+package br.com.vpc.repository.membros;
 
 import java.util.List;
 

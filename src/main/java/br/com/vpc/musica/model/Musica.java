@@ -2,7 +2,7 @@ package br.com.vpc.musica.model;
 
 import javax.persistence.Entity;
 
-import br.com.vpc.repository.AbstractMusicaEntity;
+import br.com.vpc.repository.musica.AbstractMusicaEntity;
 
 @Entity
 public class Musica extends AbstractMusicaEntity{

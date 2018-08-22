@@ -1,4 +1,4 @@
-package br.com.vpc.repository;
+package br.com.vpc.repository.escala;
 
 import java.io.Serializable;
 
@@ -9,13 +9,13 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.SequenceGenerator;
 
 @MappedSuperclass
-public class AbstractMinistroEntity implements Serializable{
+public class AbstractEscalaEntity implements Serializable{
 
-	private static final long serialVersionUID = -2281149311109424241L;
+	private static final long serialVersionUID = 5121131995066126316L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="SEQ_MINISTRO")
-	@SequenceGenerator(name="SEQ_MINISTRO", sequenceName="SEQUENCIA_MINISTRO")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="SEQ_ESCALA")
+	@SequenceGenerator(name="SEQ_ESCALA", sequenceName="SEQUENCIA_ESCALA")
 	private Long id;
 
 	
@@ -40,7 +40,7 @@ public class AbstractMinistroEntity implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AbstractMinistroEntity other = (AbstractMinistroEntity) obj;
+		AbstractEscalaEntity other = (AbstractEscalaEntity) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

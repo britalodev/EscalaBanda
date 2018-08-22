@@ -2,7 +2,7 @@ package br.com.vpc.instrumentos.model;
 
 import javax.persistence.Entity;
 
-import br.com.vpc.repository.AbstractInstrumentoEntity;
+import br.com.vpc.repository.instrumentos.AbstractInstrumentoEntity;
 
 @Entity
 public class Instrumento extends AbstractInstrumentoEntity {

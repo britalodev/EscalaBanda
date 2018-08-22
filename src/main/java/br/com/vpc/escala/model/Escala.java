@@ -2,14 +2,12 @@ package br.com.vpc.escala.model;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 import br.com.vpc.membros.model.Ministro;
 import br.com.vpc.musica.model.Musica;
-import br.com.vpc.repository.AbstractEscalaEntity;
+import br.com.vpc.repository.escala.AbstractEscalaEntity;
 
 @Entity
 public class Escala extends AbstractEscalaEntity{
@@ -18,12 +16,10 @@ public class Escala extends AbstractEscalaEntity{
 	
 	private String data;
 
-	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="escala_id", referencedColumnName="id")
+	@ManyToMany
 	private List<Ministro> ministros;
 	
-	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="escala_id", referencedColumnName="id")
+	@ManyToMany
 	private List<Musica> musicas;
 	
 	

@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.vpc.membros.model.Ministro;
-import br.com.vpc.repository.InstrumentoRepository;
-import br.com.vpc.repository.MinistroRepository;
+import br.com.vpc.repository.instrumentos.InstrumentoRepository;
+import br.com.vpc.repository.membros.MinistroRepository;
 
 @RestController
 @RequestMapping("membros")

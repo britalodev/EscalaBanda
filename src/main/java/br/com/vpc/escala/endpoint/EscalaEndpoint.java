@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.vpc.escala.model.Escala;
-import br.com.vpc.repository.EscalaRepository;
+import br.com.vpc.repository.escala.EscalaRepository;
 
 @RestController
 @RequestMapping("escala")

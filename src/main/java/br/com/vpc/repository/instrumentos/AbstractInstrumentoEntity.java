@@ -1,4 +1,4 @@
-package br.com.vpc.repository;
+package br.com.vpc.repository.instrumentos;
 
 import java.io.Serializable;
 
