@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "2e50ac4e-98a3-4198-add1-812ce148db1d",
+		"name": "APIEscala",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Membros",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get de Membros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/membros",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"membros"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get de Membros Por Nome",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/membros",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"membros"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post de Membro / Membros",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n\t{\n\t\t\"nome\":\"Ítalo\",\n\t\t\"funcao\":\"Músico\"\n\t}\n]"
+								},
+								"url": {
+									"raw": "localhost:8080/membros/salvarLista",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"membros",
+										"salvarLista"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post de Membro / Membros Músicos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n        {\n            \"id\": 1,\n            \"nome\": \"Ítalo\",\n            \"funcao\": \"Músico\",\n            \"instrumento\":\n            [\n            \t{\n            \t\t\"id\":1\n            \t}\t\n            ]\n        }\n    ]"
+								},
+								"url": {
+									"raw": "localhost:8080/membros/salvarLista",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"membros",
+										"salvarLista"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PUT",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Músicas",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get Músicas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/musica",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"musica"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post Música / Músicas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n\t{\n\t\"nomeMusica\":\"Cia. SALT - Quero Conhecer Jesus (Cover Alessandro Villas Boas)\",\n\t\"urlYouTube\":\"https://www.youtube.com/watch?v=rBVjbjGVVjo\",\n\t\"cifraClub\":\"https://www.cifraclub.com.br/cia-salt/quero-conhecer-jesus-o-meu-amado--o-mais-belo/completa.html\",\n\t\"cifraMelodica\":\"https://www.ciframelodica.com.br/musicas/cia-salt-quero-conhecer-jesus-6081/\"\n\t},\n\t{\n\t\"nomeMusica\":\"Santo Espirito / Tua Presença é Real\",\n\t\"urlYouTube\":\"https://www.youtube.com/watch?v=SPE7N3j0aus\",\n\t\"cifraClub\":\"https://www.cifraclub.com.br/laura-souguellis/santo-espirito/\",\n\t\"cifraMelodica\":\"https://www.ciframelodica.com.br/musicas/laura-souguellis-santo-espirito-holy-spirit-3453/\"\n\t}\n]"
+								},
+								"url": {
+									"raw": "localhost:8080/musica",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"musica"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PUT",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Instrumentos",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get de Instrumentos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/instrumentos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instrumentos"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post de Instrumento / Instrumentos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n\t{\n\t\t\"instrumento\":\"Violão\"\n\t},\n\t{\n\t\t\"instrumento\":\"Guitaraa\"\n\t},\n\t{\n\t\t\"instrumento\":\"Contra-Baixo\"\n\t},\n\t{\n\t\t\"instrumento\":\"Violino\"\n\t},\n\t{\n\t\t\"instrumento\":\"Teclado\"\n\t},\n\t{\n\t\t\"instrumento\":\"Saxofone\"\n\t},\n\t{\n\t\t\"instrumento\":\"Cajon\"\n\t},\n\t{\n\t\t\"instrumento\":\"Bateria\"\n\t}\n]"
+								},
+								"url": {
+									"raw": "localhost:8080/instrumentos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instrumentos"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PUT",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Escalas",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get de Escalas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/escala",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"escala"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post de Escalas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"data\": \"24/08/2018\",\r\n    \"ministros\": \r\n    [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ],\r\n    \"musicas\": \r\n    [\r\n        {\r\n            \"id\": 1\r\n        },\r\n        {\r\n            \"id\": 2\r\n        }\r\n    ]\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/escala",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"escala"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PUT",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
