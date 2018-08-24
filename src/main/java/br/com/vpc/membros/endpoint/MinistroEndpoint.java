@@ -51,8 +51,8 @@ private final MinistroRepository ministroDAO;
 	}
 	
 	@PutMapping
-	public ResponseEntity<?> update(@RequestBody Ministro ministro){
-		ministroDAO.save(ministro);
+	public ResponseEntity<?> update(@RequestBody List<Ministro> ministro){
+		ministroDAO.saveAll(ministro);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 	
