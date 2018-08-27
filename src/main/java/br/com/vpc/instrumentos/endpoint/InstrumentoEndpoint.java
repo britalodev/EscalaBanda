@@ -25,6 +25,7 @@ public class InstrumentoEndpoint {
 		this.instrumentoDAO = instrumentoDAO;
 	}
 
+	@CrossOrigin
 	@GetMapping
 	public ResponseEntity<?> listAll(Pageable pageable) {
 		return new ResponseEntity<>(instrumentoDAO.findAll(pageable), HttpStatus.OK);
