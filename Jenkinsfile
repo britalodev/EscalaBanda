@@ -13,6 +13,7 @@ pipeline {
                         echo "PATH = ${PATH}"
                         echo "M3_HOME = ${M3_HOME}"
                         mvn -v
+                        pwd
                         '''
                         }
                 }
