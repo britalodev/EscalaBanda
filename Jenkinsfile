@@ -8,8 +8,7 @@ pipeline {
                 stage('Build'){
                         steps {
                         sh '''
-                        export M3_HOME=/user/share/maven
-                        export PATH=${M3_HOME}/bin:${PATH}
+                        export PATH=/user/share/maven/bin:${PATH}
                         mvn clean install
                         '''
                         }
