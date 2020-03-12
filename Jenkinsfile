@@ -2,16 +2,13 @@ pipeline {
 
         agent any    
 
-        tools { 
-        maven 'Maven 3.3.9' 
-        jdk 'jdk11' 
-    }
+
         
         stages {
                 stage('Build'){
                         sh '''
                         echo "PATH = ${PATH}"
-                        echo "M2_HOME = ${M3_HOME}"
+                        echo "M3_HOME = ${M3_HOME}"
                         '''
                 }
                 
