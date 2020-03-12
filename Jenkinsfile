@@ -9,7 +9,7 @@ pipeline {
                         steps {
                         sh '''
                         export PATH=/user/share/maven/bin:${PATH}
-                        sudo mvn clean install
+                        mvn clean install
                         '''
                         }
                 }
